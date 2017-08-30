@@ -1,0 +1,22 @@
+
+approve_by_comment: true
+approve_regex: ^Approved
+reject_regex: ^Rejected
+reset_on_push: false
+reviewers:
+    -
+        name: devs
+        required: 1
+        members:
+            - vitoralvesdev
+    -
+        name: designers
+        required: 1
+        members:
+            - vitoralvesdev
+        conditions:
+            files:
+                - "*.png"
+                - "*.jpg"
+                - "*.css"              
+
