@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { FiltroModal } from 'react-native-mesa-componentes';
+import { FiltroModal } from 'react-native-componentes';
 import {
     View,
     Text,

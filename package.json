@@ -1,5 +1,5 @@
 {
-	"name": "react-native-mesa-componentes",
+	"name": "react-native-componentes",
 	"version": "0.0.6",
 	"scripts": {
 		"start": "node node_modules/react-native/local-cli/cli.js start",

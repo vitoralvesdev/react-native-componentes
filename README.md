@@ -5,7 +5,7 @@
 ### Como usar um componente ?
 
 ```js
-import { Paginacao } from 'react-native-mesa-componentes';
+import { Paginacao } from 'react-native-componentes';
 
 <Paginacao
     paginaInicial={0}
@@ -16,8 +16,8 @@ import { Paginacao } from 'react-native-mesa-componentes';
 
 ## Componentes 
 
-- [x] [FiltroModal](https://github.com/MesaDaTI/react-native-mesa-componentes/blob/master/documentacao/API/filtromodal.md)
-- [x] [Paginacao](https://github.com/MesaDaTI/react-native-mesa-componentes/blob/master/documentacao/API/paginacao.md)
+- [x] [FiltroModal](https://github.com/vitoralvesdev/react-native-componentes/blob/master/documentacao/API/filtromodal.md)
+- [x] [Paginacao](https://github.com/vitoralvesdev/react-native-componentes/blob/master/documentacao/API/paginacao.md)
 
 ## Contribua
 
@@ -41,7 +41,7 @@ import { Paginacao } from 'react-native-mesa-componentes';
 - Crie o pull request.
 
 
-## A Mesa
+## Objetivo com o projeto
 
-Criamos este projeto para ajudar no dia a dia do programador, estaremos felizes em aceitar sugestões, correções ou funcionalidades novas (:
+Criei este projeto para ajudar no dia a dia do programador, estou feliz em aceitar sugestões, correções ou funcionalidades novas (:
 
