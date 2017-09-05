@@ -44,7 +44,7 @@ export default class FiltroModal extends Component {
                     filtroSelecionado={(filtro)=>this.filtroSelecionado(filtro)}
                 />
             </View>
-        );
+        )
     }
 }
 

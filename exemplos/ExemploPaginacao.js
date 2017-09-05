@@ -16,6 +16,6 @@ export default class ExemploPaginacao extends Component {
                 paginas={paginas}
                 paginaAtual={(pagina)=>console.log("PÁGINA_ATUAL=>", pagina)}
             />
-        );
+        )
     }
 } 

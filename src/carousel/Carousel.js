@@ -1,38 +1,42 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 import {
     View,
     Text,
     StyleSheet,
-    ScrollView
+    ScrollView,
+    Dimensions
 } from 'react-native';
+const {width} = Dimensions.get('window');
 
 export default class Carousel extends Component {
-   /* render() {
-        return(
-            <View style={[estilos.pagina, this.props.estiloPagina ]}>
-                <ScrollView
-                    horizontal={false}
-                    showsHorizontalScrollIndicator={false}
-                >
-                    {this.props.children}
-                </ScrollView>
-            </View>
-        )
-    }*/
+    constructor(props) {
+        super(props);
+    }
+
+    renderItems() {
+        if (!this.props.children) return;
+        return this.props.children.map((item, i)=> {
+            return(
+                <View key={i} style={estilos.pagina}>{item}</View>
+            )
+        })
+    }
 
     render() {
         return(
-            <View><Text>dsdsd</Text></View>
+            <ScrollView
+                horizontal={true}
+                showsHorizontalScrollIndicator={false}
+                pagingEnabled={true}>
+                    {this.renderItems()}
+            </ScrollView>
         )
     }
-}
-
-Carousel.PropTypes = {
-    estiloPagina: PropTypes.style
 }
 
 const estilos = StyleSheet.create({
     pagina : {
-        flex: 1
+        flex: 1,
+        width
     }
-});     
+})     

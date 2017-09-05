@@ -15,13 +15,13 @@ export default class reactNativeComponentes extends Component {
                     React Native Componentes
                 </Text>
                 <Text style={estilos.subTitulo}>
-                    ./src/componentes/ * Para todos os componentes
+                    ./src/ * Para todos os componentes
                 </Text>
                 <Text style={estilos.subTitulo}>
                     ./exemplos/ * Para todos os exemplos
                 </Text>      
             </View>
-        );
+        )
     }
 }
 
