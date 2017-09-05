@@ -1,8 +1,5 @@
 <h3 align="center">FiltroModal</p> 
 
-### Introdução
-Modal que retorna um objeto selecionado dentro de um array
-
 ![alt text](https://media.giphy.com/media/xTg8ANVZqNW11wsH4s/giphy.gif)
 
 ### Propriedades 

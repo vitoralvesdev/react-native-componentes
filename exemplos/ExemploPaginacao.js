@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Paginacao } from 'react-native-componentes';
+import Paginacao from 'react-native-componentes';
 
 const paginas = [
     { pagina: 0, titulo: 'Página Um' },
@@ -16,6 +16,6 @@ export default class ExemploPaginacao extends Component {
                 paginas={paginas}
                 paginaAtual={(pagina)=>console.log("PÁGINA_ATUAL=>", pagina)}
             />
-        );
+        )
     }
 } 

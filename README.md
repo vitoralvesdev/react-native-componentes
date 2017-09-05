@@ -16,6 +16,7 @@ import { Paginacao } from 'react-native-componentes';
 
 ## Componentes 
 
+- [x] [Carousel](https://github.com/vitoralvesdev/react-native-componentes/blob/master/documentacao/API/carousel.md)
 - [x] [FiltroModal](https://github.com/vitoralvesdev/react-native-componentes/blob/master/documentacao/API/filtromodal.md)
 - [x] [Paginacao](https://github.com/vitoralvesdev/react-native-componentes/blob/master/documentacao/API/paginacao.md)
 

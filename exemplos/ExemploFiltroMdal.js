@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import { FiltroModal } from 'react-native-componentes';
+import FiltroModal from 'react-native-componentes';
 import {
     View,
     Text,
     StyleSheet,
     TouchableOpacity
 } from 'react-native';
-import FiltroModal from '../src/filtromodal/FiltroModal';
 
 const filtros = [
     {id: 0, filtro: 'Homem Aranha'},
@@ -17,7 +16,7 @@ const filtros = [
     {id: 5, filtro: 'Homem Libélula'}
 ];
 
-export default class FiltroModal extends Component {
+export default class ExemploFiltroModal extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -45,7 +44,7 @@ export default class FiltroModal extends Component {
                     filtroSelecionado={(filtro)=>this.filtroSelecionado(filtro)}
                 />
             </View>
-        );
+        )
     }
 }
 

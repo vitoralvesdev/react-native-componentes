@@ -1,8 +1,5 @@
 <h3 align="center">Páginação</p> 
 
-### Introdução
-Componente para paginar um array de objetos
-
 ![alt text](https://media.giphy.com/media/3owvJWH4zswpiOXsu4/giphy.gif)
 
 ### Propriedades 

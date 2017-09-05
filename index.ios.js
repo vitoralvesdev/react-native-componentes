@@ -6,7 +6,7 @@ import {
   View
 } from 'react-native';
 
-export default class reactNativeMesaComponentes extends Component {
+export default class reactNativeComponentes extends Component {
   render() {
     return(
         <View style={estilos.corpo}>
@@ -43,4 +43,4 @@ const estilos = StyleSheet.create({
     },
 });
 
-AppRegistry.registerComponent('reactNativeMesaComponentes', () => reactNativeMesaComponentes);
+AppRegistry.registerComponent('reactNativeComponentes', () => reactNativeComponentes);

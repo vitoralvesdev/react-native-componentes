@@ -5,22 +5,23 @@ import {
   Text,
   View
 } from 'react-native';
+import Carousel from './src';
 
-export default class reactNativeMesaComponentes extends Component {
+export default class reactNativeComponentes extends Component {
     render() {
         return(
             <View style={estilos.corpo}>
                 <Text style={estilos.titulo}>
-                    Mesa da T.I Componentes
+                    React Native Componentes
                 </Text>
                 <Text style={estilos.subTitulo}>
-                    ./src/componentes/ * Para todos os componentes
+                    ./src/ * Para todos os componentes
                 </Text>
                 <Text style={estilos.subTitulo}>
                     ./exemplos/ * Para todos os exemplos
-                </Text>
+                </Text>      
             </View>
-        );
+        )
     }
 }
 
@@ -43,4 +44,4 @@ const estilos = StyleSheet.create({
     },
 });
 
-AppRegistry.registerComponent('reactNativeMesaComponentes', () => reactNativeMesaComponentes);
+AppRegistry.registerComponent('reactNativeComponentes', () => reactNativeComponentes);
