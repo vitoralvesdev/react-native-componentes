@@ -16,7 +16,7 @@ const filtros = [
     {id: 5, filtro: 'Homem Libélula'}
 ];
 
-export default class FiltroModal extends Component {
+export default class ExemploFiltroModal extends Component {
     constructor(props) {
         super(props);
         this.state = {

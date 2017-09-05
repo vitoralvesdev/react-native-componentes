@@ -6,7 +6,7 @@ import {
 } from 'react-native';
 import Carousel from 'react-native-componentes';
 
-export default class Carousel extends Component {
+export default class ExemploCarousel extends Component {
     render() {
         return(
             <View style={estilos.corpo}>
