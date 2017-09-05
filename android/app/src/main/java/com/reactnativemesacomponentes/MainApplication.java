@@ -1,4 +1,4 @@
-package com.reactnativemesacomponentes;
+package com.reactnativecomponentes;
 
 import android.app.Application;
 

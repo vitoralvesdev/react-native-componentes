@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import { FiltroModal } from 'react-native-componentes';
+import FiltroModal from 'react-native-componentes';
 import {
     View,
     Text,
     StyleSheet,
     TouchableOpacity
 } from 'react-native';
-import FiltroModal from '../src/filtromodal/FiltroModal';
 
 const filtros = [
     {id: 0, filtro: 'Homem Aranha'},
