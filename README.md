@@ -1,4 +1,4 @@
-<h3 align="center">React Native Mesa da T.I Componentes</p> 
+<h3 align="center">React Native Componentes</p> 
 
 ## Começando
 
