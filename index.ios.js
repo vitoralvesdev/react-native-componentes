@@ -5,23 +5,24 @@ import {
   Text,
   View
 } from 'react-native';
+import Carousel from './src';
 
 export default class reactNativeComponentes extends Component {
-  render() {
-    return(
-        <View style={estilos.corpo}>
-            <Text style={estilos.titulo}>
-                Mesa da T.I Componentes
-            </Text>
-            <Text style={estilos.subTitulo}>
-                ./src/componentes/ * Para todos os componentes
-            </Text>
-            <Text style={estilos.subTitulo}>
-                ./exemplos/ * Para todos os exemplos
-            </Text>
-        </View>
-    );
-  }
+    render() {
+        return(
+            <View style={estilos.corpo}>
+                <Text style={estilos.titulo}>
+                    React Native Componentes
+                </Text>
+                <Text style={estilos.subTitulo}>
+                    ./src/ * Para todos os componentes
+                </Text>
+                <Text style={estilos.subTitulo}>
+                    ./exemplos/ * Para todos os exemplos
+                </Text>      
+            </View>
+        )
+    }
 }
 
 const estilos = StyleSheet.create({
