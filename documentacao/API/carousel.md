@@ -5,6 +5,3 @@
 ### Propriedades 
 | prop | padrão | tipo | descrição |
 | ---- | ---- | ----| ---- |
-| paginaInicial | nenhum | number | Posição inicial dentro do array |
-| paginas | nenhum | array | Array de objetos que irá ser paginado |
-| paginaAtual | nenhum | func | Objeto atual que irá retornar toda vez que houver uma páginação |
