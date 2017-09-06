@@ -4,15 +4,20 @@ import {
   Text,
   StyleSheet
 } from 'react-native';
-import Busca from './busca/Busca';
 
 export default class App extends Component {
     render() {
         return(
             <View style={estilos.corpo}>
-                <Busca 
-                    busca={(busca)=>console.log(busca)}
-                />      
+                <Text style={estilos.titulo}>
+                    React Native Componentes
+                </Text>
+                <Text style={estilos.subTitulo}>
+                    ./src/ * Para todos os componentes
+                </Text>
+                <Text style={estilos.subTitulo}>
+                    ./exemplos/ * Para todos os exemplos
+                </Text>      
             </View>
         )
     }
