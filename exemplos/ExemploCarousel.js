@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import {
     View,
-    Text,
     StyleSheet,
 } from 'react-native';
 import Carousel from 'react-native-componentes';
@@ -11,9 +10,9 @@ export default class ExemploCarousel extends Component {
         return(
             <View style={estilos.corpo}>
                 <Carousel> 
-                    <View style={estilos.pagina1}><Text>Página 1</Text></View>
-                    <View style={estilos.pagina2}><Text>Página 2</Text></View>
-                    <View style={estilos.pagina3}><Text>Página 3</Text></View>
+                    <View style={estilos.pagina1} />
+                    <View style={estilos.pagina2} />
+                    <View style={estilos.pagina3} />
                 </Carousel>
             </View>
         )
