@@ -4,14 +4,13 @@ import {
   Text,
   StyleSheet
 } from 'react-native';
+import Header from './header/Header';
 
 export default class App extends Component {
     render() {
         return(
             <View style={estilos.corpo}>
-                <Text style={estilos.titulo}>
-                    React Native Componentes
-                </Text>
+                <Header titulo="React Native Componentes" />
                 <Text style={estilos.subTitulo}>
                     ./src/ * Para todos os componentes
                 </Text>
@@ -24,18 +23,13 @@ export default class App extends Component {
 }
 
 const estilos = StyleSheet.create({
-    corpo: {
+    corpo : {
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: '#F5FCFF',
     },
-    titulo: {
-        fontSize: 20,
-        textAlign: 'center',
-        margin: 10,
-    },
-    subTitulo: {
+    subTitulo : {
         textAlign: 'center',
         color: '#333333',
         marginBottom: 5,
