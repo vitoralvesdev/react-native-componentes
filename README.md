@@ -18,9 +18,12 @@ import { Paginacao } from 'react-native-componentes';
 
 - [x] [Busca](https://github.com/vitoralvesdev/react-native-componentes/blob/master/documentacao/API/busca.md)
 - [x] [Carousel](https://github.com/vitoralvesdev/react-native-componentes/blob/master/documentacao/API/carousel.md)
+- [ ] Carregando
 - [x] [FiltroModal](https://github.com/vitoralvesdev/react-native-componentes/blob/master/documentacao/API/filtromodal.md)
+- [ ] GaleriaFotos
 - [x] [Header](https://github.com/vitoralvesdev/react-native-componentes/blob/master/documentacao/API/header.md)
 - [x] [Paginacao](https://github.com/vitoralvesdev/react-native-componentes/blob/master/documentacao/API/paginacao.md)
+- [ ] VerMais
 
 ## Contribua
 
