@@ -22,7 +22,9 @@ import { Paginacao } from 'react-native-componentes';
 - [x] [FiltroModal](https://github.com/vitoralvesdev/react-native-componentes/blob/master/documentacao/API/filtromodal.md)
 - [ ] GaleriaFotos
 - [x] [Header](https://github.com/vitoralvesdev/react-native-componentes/blob/master/documentacao/API/header.md)
+- [ ] Menu
 - [x] [Paginacao](https://github.com/vitoralvesdev/react-native-componentes/blob/master/documentacao/API/paginacao.md)
+- [ ] Swiper
 - [ ] VerMais
 
 ## Contribua
