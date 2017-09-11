@@ -25,7 +25,7 @@ import { Paginacao } from 'react-native-componentes';
 - [ ] Menu
 - [x] [Paginacao](https://github.com/vitoralvesdev/react-native-componentes/blob/master/documentacao/API/paginacao.md)
 - [ ] Swiper
-- [ ] VerMais
+- [x] [VerMaisTexto](https://github.com/vitoralvesdev/react-native-componentes/blob/master/documentacao/API/vermaistexto.md)
 
 ## Contribua
 
