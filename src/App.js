@@ -5,13 +5,18 @@ import {
   StyleSheet
 } from 'react-native';
 import Header from './header/Header';
-import Carregando from './carregando/Carregando';
 
 export default class App extends Component {
     render() {
         return(
             <View style={estilos.corpo}>
-                <Carregando />     
+                <Header titulo="React Native Componentes" />
+                <Text style={estilos.subTitulo}>
+                    ./src/ * Para todos os componentes
+                </Text>
+                <Text style={estilos.subTitulo}>
+                    ./exemplos/ * Para todos os exemplos
+                </Text>      
             </View>
         )
     }
