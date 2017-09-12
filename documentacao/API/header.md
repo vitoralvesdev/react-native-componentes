@@ -4,4 +4,5 @@
 
 ### Propriedades 
 | prop | padrão | tipo | descrição |
+| ---- | ---- | ----| ---- |
 | titulo | nenhum | string | Texto que irá aparecer no header |
