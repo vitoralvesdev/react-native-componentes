@@ -1,4 +1,5 @@
 // Componentes 
+import AlbumFotos from './albumFotos/AlbumFotos';
 import Busca from './busca/Busca';
 import Carousel from './carousel/Carousel';
 import Carregando from './carregando/Carregando';
@@ -10,6 +11,7 @@ import VerMais from './verMaisTexto/VerMaisTexto';
 
 // Exports
 export {
+    AlbumFotos,
     Busca,
     Carousel,
     Carregando,
