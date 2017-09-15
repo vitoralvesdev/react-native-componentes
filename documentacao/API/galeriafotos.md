@@ -6,5 +6,5 @@
 | prop | padrão | tipo | descrição |
 | ---- | ---- | ----| ---- |
 | titulo | nenhum | string | Título do album |
-| qtdFotos | nenhum | string | Quantidade de fotos que o album contém |
+| qtdFotos | nenhum | string | Quantidade de fotos que a galeria contém |
 | fotos | nenhum | object | Fotos que a galeria irá renderizar |
