@@ -1,4 +1,4 @@
-<h3 align="center">Header</p> 
+<h3 align="center">Header</h3> 
 
 ![alt text](https://raw.githubusercontent.com/vitoralvesdev/react-native-componentes/master/prints/Header.jpeg)
 

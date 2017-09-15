@@ -1,4 +1,4 @@
-<h3 align="center">FiltroModal</p> 
+<h3 align="center">FiltroModal</h3> 
 
 ![alt text](https://media.giphy.com/media/xTg8ANVZqNW11wsH4s/giphy.gif)
 

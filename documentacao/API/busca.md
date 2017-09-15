@@ -1,4 +1,4 @@
-<h3 align="center">Busca</p> 
+<h3 align="center">Busca</h3> 
 
 ![alt text](https://media.giphy.com/media/3ov9jRK83zq75z507C/giphy.gif)
 
