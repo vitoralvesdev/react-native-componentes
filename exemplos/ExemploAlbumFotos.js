@@ -12,7 +12,7 @@ export default class AlbumFotos extends Component {
                 <AlbumFotos 
                     capa="https://i.imgur.com/mcT43dV.jpg"
                     titulo="Fotos de Terror"
-                    qtdFotos={10}
+                    qtdFotos="10 Fotos"
                 /> 
             </View>
         )

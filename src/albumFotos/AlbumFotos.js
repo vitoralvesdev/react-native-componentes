@@ -22,12 +22,6 @@ export default class AlbumFotos extends Component {
         }  
     }
 
-    renderQtdFotos(qtdFotos) {
-        if (qtdFotos < 0 || qtdFotos == 0) return 'Nenhum Foto';
-        if (qtdFotos == 1) return qtdFotos + ' Foto';
-        if (qtdFotos > 1) return qtdFotos + ' Fotos';
-    }
-
     render() {
         return(
             <TouchableOpacity onPres={this.props.abrir}>
@@ -35,7 +29,7 @@ export default class AlbumFotos extends Component {
                     {this.renderAlbumCapa()}
                     <View style={estilos.albumInfo}>
                         <Text style={estilos.albumInfoTexto}>{this.props.titulo}</Text>
-                        <Text style={estilos.albumInfoTexto}>{this.renderQtdFotos(this.props.qtdFotos)}</Text>
+                        <Text style={estilos.albumInfoTexto}>{this.props.qtdFotos}</Text>
                     </View>
                 </View>
             </TouchableOpacity>
@@ -47,7 +41,7 @@ AlbumFotos.PropTypes = {
     abrir: PropTypes.func,
     capa: PropTypes.string,
     titulo: PropTypes.string,
-    qtdFotos: PropTypes.number
+    qtdFotos: PropTypes.string
 }
 
 const estilos = StyleSheet.create({
