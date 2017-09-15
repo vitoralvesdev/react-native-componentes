@@ -1,6 +1,4 @@
-<h3 align="center">GaleriaFotos</p> 
-
-![alt text](https://media.giphy.com/media/l378tBCI1nfGeLcL6/giphy.gif)
+<h3 align="center">GaleriaFotos</h3> 
 
 ### Propriedades 
 | prop | padrão | tipo | descrição |
