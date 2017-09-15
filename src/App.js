@@ -34,7 +34,7 @@ export default class App extends Component {
             <View >
                 <GaleriaFotos 
                     titulo="Album de Terror"
-                    qtdFotos={10}
+                    qtdFotos="20 Fotos"
                     fotos={FOTOS}
                 />      
             </View>
