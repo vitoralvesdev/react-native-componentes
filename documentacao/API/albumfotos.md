@@ -1,4 +1,4 @@
-<h3 align="center">AlbumFotos</p> 
+<h3 align="center">AlbumFotos</h3> 
 
 ### Propriedades 
 | prop | padrão | tipo | descrição |
