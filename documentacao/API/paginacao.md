@@ -1,4 +1,4 @@
-<h3 align="center">Páginação</p> 
+<h3 align="center">Páginação</h3> 
 
 ![alt text](https://media.giphy.com/media/3owvJWH4zswpiOXsu4/giphy.gif)
 

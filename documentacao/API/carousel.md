@@ -1,4 +1,4 @@
-<h3 align="center">Carousel</p> 
+<h3 align="center">Carousel</h3> 
 
 ![alt text](https://media.giphy.com/media/xT9IgmfVzIdenFSPKg/giphy.gif)
 
