@@ -1,6 +1,6 @@
 {
 	"name": "react-native-componentes",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"scripts": {
 		"start": "node node_modules/react-native/local-cli/cli.js start",
 		"test": "jest"
@@ -11,9 +11,11 @@
 	  "url": "https://github.com/vitoralvesdev/react-native-componentes/issues"
 	},
 	"homepage": "https://github.com/vitoralvesdev/react-native-componentes#readme",
-	"devDependencies": {
+	"dependencies": {
 		"react": "16.0.0-alpha.12",
-		"react-native": "0.47.1",
+		"react-native": "0.47.1"
+	},
+	"devDependencies": {
 		"babel-jest": "20.0.3",
 		"babel-preset-react-native": "2.1.0",
 		"jest": "20.0.4",
