@@ -2,6 +2,12 @@
     <img alt="react-native-swiper" src="https://raw.githubusercontent.com/vitoralvesdev/react-native-componentes/b90802ec6a502a5a448f8619130455156c856943/src/imgs/react-native-componentes-vitor-alves.jpg" >
 </p>
 
+## Instalação
+
+```js
+$ sudo npm install react-native-componentes
+```
+
 ## Começando
 
 ### Como usar um componente ?
