@@ -5,7 +5,7 @@
 ## Instalação
 
 ```js
-$ sudo npm install react-native-componentes --save
+$ sudo npm install --save-dev react-native-componentes 
 ```
 
 ## Começando
