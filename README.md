@@ -13,13 +13,9 @@ $ npm install --save-dev react-native-componentes
 ### Como usar um componente ?
 
 ```js
-import { Paginacao } from 'react-native-componentes';
+import { Header } from 'react-native-componentes';
 
-<Paginacao
-    paginaInicial={0}
-    paginas={paginas}
-    paginaAtual={(pagina)=>console.log("PÁGINA ATUAL=>", pagina)}
-/>
+<Header titulo="React Native Componentes" />
 ```
 
 ## Componentes 
