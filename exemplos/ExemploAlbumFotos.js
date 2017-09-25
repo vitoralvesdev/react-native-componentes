@@ -3,7 +3,7 @@ import {
   View,  
   Text
 } from 'react-native';
-import AlbumFotos from 'react-native-componentes';
+import { AlbumFotos } from 'react-native-componentes';
 
 export default class AlbumFotos extends Component {
     render() {

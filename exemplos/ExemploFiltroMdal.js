@@ -5,7 +5,7 @@ import {
     StyleSheet,
     TouchableOpacity
 } from 'react-native';
-import FiltroModal from 'react-native-componentes';
+import { FiltroModal } from 'react-native-componentes';
 
 const filtros = [
     {id: 0, filtro: 'Homem Aranha'},

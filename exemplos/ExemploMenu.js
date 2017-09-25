@@ -5,7 +5,7 @@ import {
   StyleSheet,
   TouchableOpacity
 } from 'react-native';
-import Menu from 'react-native-componentes';
+import { Menu } from 'react-native-componentes';
 
 const ITENS = [
     {nome: 'Criar'},

@@ -3,7 +3,7 @@ import {
   View,  
   Text
 } from 'react-native';
-import GaleriaFotos from 'react-native-componentes';
+import { GaleriaFotos } from 'react-native-componentes';
 
 const FOTOS = [
     {id: 0, nome: 'Pennywise', url: 'https://i.imgur.com/mcT43dV.jpg'},

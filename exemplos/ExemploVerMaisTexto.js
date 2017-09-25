@@ -4,7 +4,7 @@ import {
   Text,
   StyleSheet
 } from 'react-native';
-import VerMaisTexto from 'react-native-componentes';
+import { VerMaisTexto } from 'react-native-componentes';
 
 export default class ExemploVerMaisTexto extends Component {
     render() {

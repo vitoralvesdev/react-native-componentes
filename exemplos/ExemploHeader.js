@@ -3,7 +3,7 @@ import {
   View,  
   StyleSheet
 } from 'react-native';
-import Header from 'react-native-components';
+import { Header } from 'react-native-components';
 
 export default class ExemploHeader extends Component {
     render() {

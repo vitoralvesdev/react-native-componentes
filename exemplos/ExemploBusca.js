@@ -4,7 +4,7 @@ import {
   Text,
   StyleSheet
 } from 'react-native';
-import Busca from 'react-native-componentes';
+import { Busca } from 'react-native-componentes';
 
 export default class ExemploBusca extends Component {
     render() {

@@ -3,7 +3,7 @@ import {
     View,
     StyleSheet,
 } from 'react-native';
-import Carousel from 'react-native-componentes';
+import { Carousel } from 'react-native-componentes';
 
 export default class ExemploCarousel extends Component {
     render() {

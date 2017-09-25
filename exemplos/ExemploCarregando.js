@@ -3,7 +3,7 @@ import {
   View,  
   Text
 } from 'react-native';
-import Carregando from 'react-native-componentes';
+import { Carregando } from 'react-native-componentes';
 
 export default class ExemploCarregando extends Component {
     render() {
