@@ -1,5 +1,5 @@
 <p align="center">
-    <img alt="react-native-swiper" src="https://raw.githubusercontent.com/vitoralvesdev/react-native-componentes/b90802ec6a502a5a448f8619130455156c856943/src/imgs/react-native-componentes-vitor-alves.jpg" >
+    <img alt="react-native-swiper" src="https://raw.githubusercontent.com/vitoralvesdev/react-native-componentes/c7e7a24a79959e38b2a051faafd1790fc8be844b/src/imgs/react-native-componentes-vitor-alves.jpg" >
 </p>
 
 ## Instalação
