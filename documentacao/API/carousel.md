@@ -4,4 +4,5 @@
 
 ### Propriedades 
 | prop | padrão | tipo | descrição |
+| ---- | ---- | ----| ---- |
 | navegacao | true | boolean | Apresenta a navegação das páginas |

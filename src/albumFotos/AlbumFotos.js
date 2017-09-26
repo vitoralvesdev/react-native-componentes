@@ -24,7 +24,7 @@ export default class AlbumFotos extends Component {
 
     render() {
         return(
-            <TouchableOpacity onPres={this.props.abrir}>
+            <TouchableOpacity activeOpacity={0.7} onPres={this.props.abrir}>
                 <View style={estilos.album}>
                     {this.renderAlbumCapa()}
                     <View style={estilos.albumInfo}>
@@ -49,7 +49,8 @@ const estilos = StyleSheet.create({
         width,
         height: 220,
         marginBottom: 10,
-        backgroundColor: 'red'
+        backgroundColor: '#BEBEBE',
+        elevation: 3
     },
     albumCapa : {
         width,
@@ -57,7 +58,7 @@ const estilos = StyleSheet.create({
     },
     albumInfo : {
         width: width-40,
-        height: 80,
+        height: 70,
         position: 'absolute',
         bottom: 0,
         alignSelf: 'center',

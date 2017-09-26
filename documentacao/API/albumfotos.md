@@ -1,5 +1,7 @@
 <h3 align="center">AlbumFotos</h3> 
 
+![alt text](https://media.giphy.com/media/l1J9Jj9CgcwhwSaM8/giphy.gif)
+
 ### Propriedades 
 | prop | padrão | tipo | descrição |
 | ---- | ---- | ----| ---- |
