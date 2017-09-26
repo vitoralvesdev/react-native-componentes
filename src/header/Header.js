@@ -15,7 +15,7 @@ export default class Header extends Component {
     render() {
         return(
             <View style={estilos.corpo}>
-                <Text style={estilos.titulo}>{this.props.titulo}</Text>
+                <Text numberOfLines={1} style={estilos.titulo}>{this.props.titulo}</Text>
             </View>
         )
     }
@@ -33,9 +33,12 @@ const estilos = StyleSheet.create({
         height: 60,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#414649'
+        backgroundColor: '#414649',
+        elevation: 3,
+        zIndex: 99
     },
     titulo : {
+        maxWidth: 250,
         fontSize: 20,
         color: '#FFFFFF'
     }
