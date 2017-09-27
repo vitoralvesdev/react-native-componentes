@@ -27,12 +27,14 @@ export default class Carousel extends Component {
     }
 
     renderItens() {
-        if (!this.props.children) return;
-        return this.itens.map((item, i)=> {
-            return(
-                <View key={i} style={estilos.pagina}>{item}</View>
-            )
-        })
+        if (!this.itens) {
+            return this.itens.map((item, i)=> {
+                return(
+                    <View key={i} style={estilos.pagina}>{item}</View>
+                )
+            })
+        }
+        return null;
     }
 
     onScrollEnd = (event)=> {
@@ -87,6 +89,6 @@ const estilos = StyleSheet.create({
     },
     navegacao : {
         fontSize: 20,
-        color: '#FFFFFF'
+        color: '#000000'
     }
 })     

@@ -62,7 +62,7 @@ const estilos = StyleSheet.create({
         paddingVertical: 5,
         position: 'absolute',
         bottom: 0,
-        borderTopWidth: 1,
+        elevation: 5,
         backgroundColor: '#FFFFFF'
     },
     item : {
