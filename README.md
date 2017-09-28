@@ -31,6 +31,11 @@ import { Header } from 'react-native-componentes';
 - [x] [Paginacao](https://github.com/vitoralvesdev/react-native-componentes/blob/master/documentacao/API/paginacao.md)
 - [x] [VerMaisTexto](https://github.com/vitoralvesdev/react-native-componentes/blob/master/documentacao/API/vermaistexto.md)
 
+## Atualizações
+
+- [V0.0.7](https://github.com/vitoralvesdev/react-native-componentes/releases/tag/0.0.7) - Novos componentes para integrar com seu projeto.
+
+
 ## Contribua
 
 ### Como contribuir para o projeto ?
