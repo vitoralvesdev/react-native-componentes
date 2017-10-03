@@ -41,7 +41,7 @@ export default class Carousel extends Component {
         let {contentOffset, layoutMeasurement} = event.nativeEvent;
         this.setState({
             paginaAtual: Math.floor(contentOffset.x / layoutMeasurement.width)
-        }, console.log(this.state.paginaAtual))
+        })
     }
 
     render() {
