@@ -6,59 +6,57 @@ import {
     ScrollView,
     Dimensions
 } from 'react-native';
-const {width} = Dimensions.get('window');
+const { width, height } = Dimensions.get('window');
 
 export default class Carousel extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            paginaAtual: 1
+            paginaAtual: this.props.paginaInicial
         }
-        this.itens = this.props.children;
     }
 
     renderNavegacao() {
-        if (!this.props.navegacao) return;
-            return(
-                <Text style={estilos.navegacao}>
-                    {`${this.state.paginaAtual}/${this.itens.length}`}
-                </Text> 
-            )
+        if (!this.props.navegacao || !this.props.children) return null;
+        return(
+            <View style={estilos.navegacao}>
+                <Text style={estilos.texto}>
+                    {`${this.state.paginaAtual + 1}/${this.props.children.length}`}
+                </Text>
+            </View> 
+        )
     }
 
     renderItens() {
-        if (!this.itens) {
-            return this.itens.map((item, i)=> {
-                return(
-                    <View key={i} style={estilos.pagina}>{item}</View>
-                )
-            })
-        }
-        return null;
+        if (!this.props.children) return null;
+        return this.props.children.map((item, i)=> {
+            return(
+                <View key={i}>{item}</View>
+            )
+        })
     }
 
     onScrollEnd = (event)=> {
         // Divide o deslocamento horizontal pela largura da view para obter a página atual
         let {contentOffset, layoutMeasurement} = event.nativeEvent;
         this.setState({
-            paginaAtual: Math.floor(contentOffset.x / layoutMeasurement.width) + 1    
-        })
+            paginaAtual: Math.floor(contentOffset.x / layoutMeasurement.width)
+        }, console.log(this.state.paginaAtual))
     }
 
     render() {
         return(
-            <View>
+            <View style={estilos.corpo}>
                 <ScrollView
-                    horizontal={true}
-                    showsHorizontalScrollIndicator={false}
-                    pagingEnabled={true}
-                    onMomentumScrollEnd={this.onScrollEnd}>
-                        {this.renderItens()}
-                </ScrollView>
-                <View style={estilos.rodape}>
+                    horizontal
+                    pagingEnabled
+                    showsHorizontalScrollIndicator={false}  
+                    onMomentumScrollEnd={this.onScrollEnd}
+                >
+                    {this.renderItens()}
+                </ScrollView> 
                     {this.renderNavegacao()}
-                </View>
-            </View>
+            </View>  
         )
     }
 }
@@ -72,9 +70,28 @@ Carousel.defaultProps = {
 }
 
 const estilos = StyleSheet.create({
-    pagina : {
+    corpo : {
         flex: 1,
-        width
+    },
+    pagina : {
+        width,
+        height
+    },
+    nenhumItem : {
+        textAlign: 'center',
+        alignSelf: 'center'
+    },
+
+    //Navegação
+    navegacao : {
+        position: 'absolute',
+        bottom: 20,
+        alignSelf: 'center',
+        zIndex: 99
+    },
+    texto : {
+        fontSize: 25,
+        color: '#000000'
     },
 
     //Rodapé
@@ -86,9 +103,6 @@ const estilos = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         flexDirection: 'row',
-    },
-    navegacao : {
-        fontSize: 20,
-        color: '#000000'
     }
+
 })     

@@ -1,37 +1,42 @@
 import React, { Component } from 'react';
 import {
-  View,  
-  Text,
-  StyleSheet
+    View,
+    StyleSheet,
+    Dimensions
 } from 'react-native';
-import Header from './header/Header';
+import Carousel from './carousel/Carousel';
 
-export default class App extends Component {
+const { width, height } = Dimensions.get('window');
+
+export default class ExemploCarousel extends Component {
     render() {
         return(
-            <View style={estilos.corpo}>
-                <Header titulo="React Native Componentes" />
-                <Text style={estilos.subTitulo}>
-                    ./src/ * Para todos os componentes
-                </Text>
-                <Text style={estilos.subTitulo}>
-                    ./exemplos/ * Para todos os exemplos
-                </Text>      
-            </View>
+            <Carousel
+                paginaInicial={0}
+                paginaAtual={(paginaAtual)=> console.log(paginaAtual)}
+            >
+                <View style={estilos.pagina1}></View>
+                <View style={estilos.pagina2}></View>
+                <View style={estilos.pagina3}></View>
+            </Carousel> 
         )
     }
-}
+} 
 
 const estilos = StyleSheet.create({
-    corpo : {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: '#F5FCFF',
+    pagina1 : {
+        width,
+        height,
+        backgroundColor: '#BF2222'
     },
-    subTitulo : {
-        textAlign: 'center',
-        color: '#333333',
-        marginBottom: 5,
+    pagina2 : {
+        width,
+        height,
+        backgroundColor: '#2B95FF'
+    },
+    pagina3 : {
+        width,
+        height,
+        backgroundColor: '#DAF722'
     }
 })
