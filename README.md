@@ -34,7 +34,7 @@ import { Header } from 'react-native-componentes';
 ## Atualizações
 
 - [V0.0.7](https://github.com/vitoralvesdev/react-native-componentes/releases/tag/0.0.7) - Novos componentes para integrar com seu projeto.
-
+- [V0.0.9](https://github.com/vitoralvesdev/react-native-componentes/releases/tag/0.0.9) - Correção em diversos bugs do Carousel.
 
 ## Contribua
 
