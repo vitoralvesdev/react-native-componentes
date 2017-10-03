@@ -2,37 +2,41 @@ import React, { Component } from 'react';
 import {
     View,
     StyleSheet,
+    Dimensions
 } from 'react-native';
 import { Carousel } from 'react-native-componentes';
+
+const { width, height } = Dimensions.get('window');
 
 export default class ExemploCarousel extends Component {
     render() {
         return(
-            <View style={estilos.corpo}>
-                <Carousel> 
-                    <View style={estilos.pagina1} />
-                    <View style={estilos.pagina2} />
-                    <View style={estilos.pagina3} />
-                </Carousel>
-            </View>
+            <Carousel
+                paginaInicial={0}
+                paginaAtual={(paginaAtual)=> console.log(paginaAtual)}
+            >
+                <View style={estilos.pagina1}></View>
+                <View style={estilos.pagina2}></View>
+                <View style={estilos.pagina3}></View>
+            </Carousel> 
         )
     }
 } 
 
 const estilos = StyleSheet.create({
-    corpo : {
-        flex: 1
-    },
     pagina1 : {
-        flex: 1,
+        width,
+        height,
         backgroundColor: '#BF2222'
     },
     pagina2 : {
-        flex: 1,
+        width,
+        height,
         backgroundColor: '#2B95FF'
     },
     pagina3 : {
-        flex: 1,
+        width,
+        height,
         backgroundColor: '#DAF722'
     }
 })
