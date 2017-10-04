@@ -9,12 +9,9 @@ import { Carousel } from 'react-native-componentes';
 const { width, height } = Dimensions.get('window');
 
 export default class ExemploCarousel extends Component {
-    render() {
+    render() { 
         return(
-            <Carousel
-                paginaInicial={0}
-                paginaAtual={(paginaAtual)=> console.log(paginaAtual)}
-            >
+            <Carousel>
                 <View style={estilos.pagina1}></View>
                 <View style={estilos.pagina2}></View>
                 <View style={estilos.pagina3}></View>
