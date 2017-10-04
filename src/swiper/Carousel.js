@@ -12,7 +12,7 @@ export default class Carousel extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            paginaAtual: this.props.paginaInicial
+            paginaAtual: 0
         }
     }
 
@@ -40,7 +40,7 @@ export default class Carousel extends Component {
         // Divide o deslocamento horizontal pela largura da view para obter a página atual
         let {contentOffset, layoutMeasurement} = event.nativeEvent;
         this.setState({
-            paginaAtual: Math.floor(contentOffset.x / layoutMeasurement.width)
+            paginaAtual: Math.floor(contentOffset.x / layoutMeasurement.width) 
         })
     }
 
