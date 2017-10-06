@@ -21,14 +21,19 @@ export default class ExemploMenu extends Component {
         }
     }
 
+    _itemSelecionado(item) {
+        console.log(item)
+        this.setState({ abrirMenu: false })
+    }
+
     render() {
         return(
             <View style={estilos.corpo}>
                 <Menu 
-                    abrir={this.state.abrirMenu} 
-                    fechar={()=>this.setState({ abrirMenu: false })} 
+                    visivel={this.state.abrirMenu} 
+                    fechar={()=>this.setState({ abrirMenu: false })}
                     itens={ITENS}
-                    itemSelecionado={(item)=>console.log(item)} 
+                    itemSelecionado={(item)=>this._itemSelecionado(item)} 
                 />   
                     <TouchableOpacity onPress={()=>this.setState({ abrirMenu: true })}>
                         <Text style={estilos.titulo}>

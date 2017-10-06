@@ -9,12 +9,7 @@ import {
 } from 'react-native';
 const {width} = Dimensions.get('window');
 
-
 export default class Menu extends Component {
-    constructor(props) {
-        super(props);
-    }
-
     selecionarItem(item, i) {
         let itemSelecionado = { index: i, item };
         this.props.itemSelecionado(itemSelecionado);
@@ -39,7 +34,7 @@ export default class Menu extends Component {
             <Modal
                 animationType="slide"
                 transparent={true}
-                visible={this.props.abrir}
+                visible={this.props.visivel}
                 onRequestClose={this.props.fechar}
             >   
                 <View style={estilos.menu}>
@@ -53,6 +48,7 @@ export default class Menu extends Component {
 Menu.PropTypes = {
     abrir: PropTypes.bool,
     fechar: PropTypes.func,
+    itens: PropTypes.array,
     itemSelecionado: PropTypes.func
 }
 
