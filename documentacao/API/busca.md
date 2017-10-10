@@ -5,4 +5,6 @@
 ### Propriedades 
 | prop | padrão | tipo | descrição |
 | ---- | ---- | ----| ---- |
-| busca | nenhum | func | Retorna o valor do texto | 
+| filtro | nenhum | array | Array que será o filtro da busca | 
+| fltroSelecionado | nenhum | func | Retorna  o valor encontrado da busca feita (Passar o filtro para funcionar) | 
+| busca | nenhum | func | Retorna o valor digitado | 
