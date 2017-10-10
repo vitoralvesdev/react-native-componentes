@@ -5,4 +5,5 @@
 ### Propriedades 
 | prop | padrão | tipo | descrição |
 | ---- | ---- | ----| ---- |
+| fltroSelecionado | nenhum | func | Retorna  o valor encontrado da busca feita (Passar o filtro para funcionar) | 
 | busca | nenhum | func | Retorna o valor digitado | 

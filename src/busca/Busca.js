@@ -48,6 +48,7 @@ export default class Busca extends Component {
 
 Busca.PropTypes = {
     busca: PropTypes.func,
+    filtro: PropTypes.array,
     filtroSelecionado: PropTypes.func
 }
 
