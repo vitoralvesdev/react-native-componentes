@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 import {
     View,
     Text,
@@ -6,6 +6,29 @@ import {
 } from 'react-native';
 
 export default class Carregando extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            tempo: 0
+        }
+    }
+
+    componentWillMount() {
+        if (this.props.tempo) this.contador("iniciar");
+    }
+
+    componentWillUnMount() {
+        this.contador("parar");
+    }
+
+    contador(contador) {
+        setInterval(()=> {
+            this.setState({
+                tempo: contador === "iniciar" ? this.state.tempo + 1 : 0
+            }, this.props.tempo(this.state.tempo))
+        }, 1000);
+    }
+
     render() {
         return(
             <View style={estilos.corpo}>
@@ -13,6 +36,10 @@ export default class Carregando extends Component {
             </View>
         )
     }
+}
+
+Carregando.defaultProps= {
+    tempo: false
 }
 
 const estilos = StyleSheet.create({

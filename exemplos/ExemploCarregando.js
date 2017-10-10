@@ -9,7 +9,7 @@ export default class ExemploCarregando extends Component {
     render() {
         return(
             <View>
-                <Carregando />     
+                <Carregando tempo={tempo=>console.log(tempo)} />     
             </View>
         )
     }
