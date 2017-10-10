@@ -6,3 +6,4 @@
 | prop | padrão | tipo | descrição |
 | ---- | ---- | ----| ---- |
 | navegacao | true | boolean | Apresenta a navegação das páginas |
+| paginaAtual | - | number | Retorna o índice da página atual |

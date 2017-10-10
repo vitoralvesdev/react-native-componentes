@@ -6,16 +6,36 @@ import {
     ScrollView,
     Dimensions
 } from 'react-native';
+
 const { width, height } = Dimensions.get('window');
 
 export default class Carousel extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            paginaAtual: 0
+            paginaAtual: 0  
         }
     }
 
+    
+    // Retorna a página atual como uma propriedade
+    paginaAtual(pagina) {
+        this.setState({ paginaAtual: pagina }, this.props.paginaAtual(pagina));
+    }
+
+    calculaPaginaAtual(offset, width) {
+        let paginaAtual = Math.floor(offset / width);
+        this.paginaAtual(paginaAtual);
+    }
+ 
+
+    onScrollEnd = (event)=> {
+        // Divide o deslocamento horizontal pela largura da view para obter a página atual
+        let {contentOffset, layoutMeasurement} = event.nativeEvent;
+        this.calculaPaginaAtual(contentOffset.x, layoutMeasurement.width);
+    }
+
+    
     renderNavegacao() {
         if (!this.props.navegacao || !this.props.children) return null;
         return(
@@ -33,14 +53,6 @@ export default class Carousel extends Component {
             return(
                 <View key={i}>{item}</View>
             )
-        })
-    }
-
-    onScrollEnd = (event)=> {
-        // Divide o deslocamento horizontal pela largura da view para obter a página atual
-        let {contentOffset, layoutMeasurement} = event.nativeEvent;
-        this.setState({
-            paginaAtual: Math.floor(contentOffset.x / layoutMeasurement.width) 
         })
     }
 

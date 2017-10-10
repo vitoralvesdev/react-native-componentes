@@ -11,7 +11,9 @@ const { width, height } = Dimensions.get('window');
 export default class ExemploCarousel extends Component {
     render() { 
         return(
-            <Carousel>
+            <Carousel
+                paginaAtual={index=>console.log("PÁGINA_ATUAL=>", index)}
+            >
                 <View style={estilos.pagina1}></View>
                 <View style={estilos.pagina2}></View>
                 <View style={estilos.pagina3}></View>
