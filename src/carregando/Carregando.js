@@ -2,6 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import {
     View,
     Text,
+    ActivityIndicator,
     StyleSheet
 } from 'react-native';
 
@@ -30,15 +31,26 @@ export default class Carregando extends Component {
     }
 
     render() {
-        return(
-            <View style={estilos.corpo}>
-                <Text style={estilos.carregando}>Carregando...</Text>
-            </View>
-        )
+        switch(this.props.layout) {
+            case "ponteiro" : 
+                return(
+                    <View style={estilos.corpo}>
+                        <Text style={estilos.carregando}>Carregando...</Text>
+                    </View>
+                )
+            case "normal" :
+                return(
+                    <View style={estilos.corpo}>
+                        <ActivityIndicator />
+                        <Text style={estilos.carregando}>Carregando</Text>
+                    </View>
+                )
+        }
     }
 }
 
 Carregando.defaultProps= {
+    layout: "normal",
     tempo: false
 }
 

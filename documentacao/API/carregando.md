@@ -5,4 +5,5 @@
 ### Propriedades 
 | prop | padrão | tipo | descrição |
 | ---- | ---- | ----| ---- |
+| layout | normal | string | Layout que será exibido |
 | tempo | false | boolean | Conta em segundos o tempo que o componente esta aberto  |
