@@ -5,4 +5,4 @@
 ### Propriedades 
 | prop | padrão | tipo | descrição |
 | ---- | ---- | ----| ---- |
-| busca | nenhum | func | Retorna o valor do texto | 
+| busca | nenhum | func | Retorna o valor digitado | 
