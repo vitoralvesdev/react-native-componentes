@@ -1,7 +1,14 @@
 <p align="center">
-    <img alt="react-native-swiper" src="https://raw.githubusercontent.com/vitoralvesdev/react-native-componentes/c7e7a24a79959e38b2a051faafd1790fc8be844b/src/imgs/react-native-componentes-vitor-alves.jpg" >
+    <img alt="react-native-swiper" src="https://raw.githubusercontent.com/vitoralvesdev/react-native-componentes/c7e7a24a79959e38b2a051faafd1790fc8be844b/src/imgs/react-native-componentes-vitor-alves.jpg">
 </p>
 
+</br>
+
+<p align="center">
+  <a href="https://www.npmjs.com/package/react-native-componentes"><img src="https://img.shields.io/badge/npm-0.0.10-orange.svg"></a>
+</p>
+
+ 
 ## Instalação
 
 ```js
