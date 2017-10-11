@@ -6,11 +6,21 @@ import {
 } from 'react-native';
 import { Busca } from 'react-native-componentes';
 
+const DATA = [
+    { id: 0, nome: "Vitor" },
+    { id: 0, nome: "Hugo" },
+    { id: 0, nome: "Alves" }
+];
+
 export default class ExemploBusca extends Component {
     render() {
         return(
             <View style={estilos.corpo}>
-                <Busca busca={(busca)=>console.log(busca)} />      
+                <Busca 
+                    filtro={DATA}
+                    filtroSelecionado={filtro=>console.log(filtro)}
+                    busca={busca=>console.log(busca)} 
+                />      
             </View>
         )
     }

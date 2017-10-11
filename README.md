@@ -13,9 +13,16 @@ $ npm install --save-dev react-native-componentes
 ### Como usar um componente ?
 
 ```js
-import { Header } from 'react-native-componentes';
+import { Header, VerMaisTexto } from 'react-native-componentes';
 
-<Header titulo="React Native Componentes" />
+return(
+    <View>
+        <Header titulo="React Native Componentes" />
+        <VerMaisTexto numeroLinhas={2}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam odio eros, auctor nec dignissim eget, condimentum in ante. In euismod laoreet molestie. Nullam dictum sed turpis vel imperdiet. Donec vel metus sed nisl mattis blandit. Sed non elit nisl. 
+        </VerMaisTexto>     
+    </View>
+)
 ```
 
 ## Componentes 
