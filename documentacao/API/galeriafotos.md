@@ -8,3 +8,4 @@
 | titulo | nenhum | string | Título do album |
 | qtdFotos | nenhum | string | Quantidade de fotos que a galeria contém |
 | fotos | nenhum | object | Fotos que a galeria irá renderizar |
+| layout | grid | string | Layout que será exibido as imagens ( grid = 3 colunas / lista = 1 coluna) |

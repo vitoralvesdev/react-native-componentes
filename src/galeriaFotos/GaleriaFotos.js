@@ -30,14 +30,6 @@ export default class GaleriaFotos extends Component {
         )
     }
 
-    _renderItem = ({ item })=> {
-        return(
-            <TouchableOpacity onPress={()=> this.setState({ abrirFoto: true, urlFoto: item.url })} activeOpacity={0.8}>
-                <Image style={estilos.fotoMin} source={{uri: item.url}} />
-            </TouchableOpacity>
-        )
-    }
-
     renderFoto(urlFoto) {
         return(
             <Modal 
@@ -59,20 +51,50 @@ export default class GaleriaFotos extends Component {
         )
     }
 
+    renderGaleria() {
+        switch(this.props.layout) {
+            case "grid" : 
+                return(
+                    <FlatList 
+                        data={this.props.fotos}
+                        keyExtractor={item=>item.id}
+                        numColumns={3}
+                        ListHeaderComponent={this._ListHeaderComponent()}
+                        renderItem={({item})=> {
+                            return(
+                                <TouchableOpacity onPress={()=> this.setState({ abrirFoto: true, urlFoto: item.url })} activeOpacity={0.8}>
+                                    <Image style={estilos.fotoGrid} source={{uri: item.url}} />
+                                </TouchableOpacity>
+                            )
+                        }}
+                    />
+                );
+            case "lista" : 
+                return(
+                    <FlatList 
+                        data={this.props.fotos}
+                        keyExtractor={item=>item.id}
+                        ListHeaderComponent={this._ListHeaderComponent()}
+                        renderItem={({item})=> {
+                            return(
+                                <TouchableOpacity onPress={()=> this.setState({ abrirFoto: true, urlFoto: item.url })} activeOpacity={0.8}>
+                                    <Image style={estilos.fotoLista} source={{uri: item.url}} />
+                                </TouchableOpacity>
+                            )
+                        }}
+                    />
+                );
+            default : return false;
+        }
+    }
+
     render() {
         return(
             <View>
-                <FlatList 
-                    data={this.props.fotos}
-                    keyExtractor={item=>item.id}
-                    numColumns={3}
-                    ListHeaderComponent={this._ListHeaderComponent()}
-                    renderItem={({item})=>this._renderItem({item})}
-                />
-
+                {this.renderGaleria()}
                 {this.renderFoto(this.state.urlFoto)}
             </View>
-        )
+        );
     }
 }
     
@@ -80,9 +102,13 @@ GaleriaFotos.PropTypes = {
     titulo: PropTypes.string,
     qtdFotos: PropTypes.string,
     fotos: PropTypes.object,
-    header: PropTypes.string
+    header: PropTypes.string,
+    layout: PropTypes.string
 };
 
+GaleriaFotos.defaultProps = {
+    layout: "grid" 
+}
 
 const estilos = StyleSheet.create({
     header : {
@@ -95,11 +121,17 @@ const estilos = StyleSheet.create({
         color: '#000000',
         fontSize: 20
     },
-    fotoMin : {
+    fotoGrid : {
         width: width/3,
         height: 100,
         marginRight: 2,
         marginBottom: 2,
+        backgroundColor: '#E2E2E2'
+    },
+    fotoLista : {
+        width: width,
+        height: height-200,
+        marginBottom: 10,
         backgroundColor: '#E2E2E2'
     },
 
