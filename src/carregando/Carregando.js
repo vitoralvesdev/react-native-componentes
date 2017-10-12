@@ -37,14 +37,15 @@ export default class Carregando extends Component {
                     <View style={estilos.corpo}>
                         <Text style={estilos.carregando}>Carregando...</Text>
                     </View>
-                )
+                );
             case "normal" :
                 return(
                     <View style={estilos.corpo}>
                         <ActivityIndicator />
                         <Text style={estilos.carregando}>Carregando</Text>
                     </View>
-                )
+                );
+            default : return false;
         }
     }
 }
