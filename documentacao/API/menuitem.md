@@ -1,4 +1,4 @@
-<h3 align="center">Menu</h3> 
+<h3 align="center">MenuItem</h3> 
 
 ![alt text](https://media.giphy.com/media/3ov9jGf5G6hC4rsIx2/giphy.gif)
 

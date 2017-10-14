@@ -7,9 +7,10 @@ import {
     Modal,
     TouchableOpacity
 } from 'react-native';
+
 const {width} = Dimensions.get('window');
 
-export default class Menu extends Component {
+export default class MenuItem extends Component {
     selecionarItem(item, i) {
         let itemSelecionado = { index: i, item };
         this.props.itemSelecionado(itemSelecionado);
@@ -45,7 +46,7 @@ export default class Menu extends Component {
     }
 }
 
-Menu.PropTypes = {
+MenuItem.PropTypes = {
     abrir: PropTypes.bool,
     fechar: PropTypes.func,
     itens: PropTypes.array,

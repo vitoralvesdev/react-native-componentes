@@ -41,7 +41,7 @@ return(
 - [x] [FiltroModal](https://github.com/vitoralvesdev/react-native-componentes/blob/master/documentacao/API/filtromodal.md)
 - [x] [GaleriaFotos](https://github.com/vitoralvesdev/react-native-componentes/blob/master/documentacao/API/galeriafotos.md)
 - [x] [Header](https://github.com/vitoralvesdev/react-native-componentes/blob/master/documentacao/API/header.md)
-- [x] [Menu](https://github.com/vitoralvesdev/react-native-componentes/blob/master/documentacao/API/menu.md)
+- [x] [MenuItem](https://github.com/vitoralvesdev/react-native-componentes/blob/master/documentacao/API/menuitem.md)
 - [x] [Paginacao](https://github.com/vitoralvesdev/react-native-componentes/blob/master/documentacao/API/paginacao.md)
 - [x] [VerMaisTexto](https://github.com/vitoralvesdev/react-native-componentes/blob/master/documentacao/API/vermaistexto.md)
 
