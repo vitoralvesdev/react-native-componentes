@@ -1,6 +1,6 @@
 {
 	"name": "react-native-componentes",
-	"version": "0.0.7",
+	"version": "0.0.10",
 	"scripts": {
 		"start": "node node_modules/react-native/local-cli/cli.js start",
 		"test": "jest"

@@ -1,7 +1,14 @@
 <p align="center">
-    <img alt="react-native-swiper" src="https://raw.githubusercontent.com/vitoralvesdev/react-native-componentes/c7e7a24a79959e38b2a051faafd1790fc8be844b/src/imgs/react-native-componentes-vitor-alves.jpg" >
+    <img alt="react-native-swiper" src="https://raw.githubusercontent.com/vitoralvesdev/react-native-componentes/c7e7a24a79959e38b2a051faafd1790fc8be844b/src/imgs/react-native-componentes-vitor-alves.jpg">
 </p>
 
+</br>
+
+<p align="center">
+  <a href="https://www.npmjs.com/package/react-native-componentes"><img src="https://img.shields.io/badge/npm-0.0.10-orange.svg"></a>
+</p>
+
+ 
 ## Instalação
 
 ```js
@@ -13,9 +20,16 @@ $ npm install --save-dev react-native-componentes
 ### Como usar um componente ?
 
 ```js
-import { Header } from 'react-native-componentes';
+import { Header, VerMaisTexto } from 'react-native-componentes';
 
-<Header titulo="React Native Componentes" />
+return(
+    <View>
+        <Header titulo="React Native Componentes" />
+        <VerMaisTexto numeroLinhas={2}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam odio eros, auctor nec dignissim eget, condimentum in ante. In euismod laoreet molestie. Nullam dictum sed turpis vel imperdiet. Donec vel metus sed nisl mattis blandit. Sed non elit nisl. 
+        </VerMaisTexto>     
+    </View>
+)
 ```
 
 ## Componentes 
@@ -30,6 +44,12 @@ import { Header } from 'react-native-componentes';
 - [x] [Menu](https://github.com/vitoralvesdev/react-native-componentes/blob/master/documentacao/API/menu.md)
 - [x] [Paginacao](https://github.com/vitoralvesdev/react-native-componentes/blob/master/documentacao/API/paginacao.md)
 - [x] [VerMaisTexto](https://github.com/vitoralvesdev/react-native-componentes/blob/master/documentacao/API/vermaistexto.md)
+
+## Atualizações
+
+- [V0.0.7](https://github.com/vitoralvesdev/react-native-componentes/releases/tag/0.0.7) - Novos componentes para integrar com seu projeto.
+- [V0.0.9](https://github.com/vitoralvesdev/react-native-componentes/releases/tag/0.0.9) - Correção em diversos bugs do Carousel.
+- [V0.0.10](https://github.com/vitoralvesdev/react-native-componentes/releases/tag/0.0.10) - Nova propriedade no Carousel.
 
 ## Contribua
 

@@ -34,7 +34,6 @@ export default class VerMaisTexto extends Component {
     }
 
     render() {
-        console.log("render")
         return(
             <View style={estilos.corpo}>
                 <Text numberOfLines={this.state.numeroLinhas}>{this.props.children}</Text>
