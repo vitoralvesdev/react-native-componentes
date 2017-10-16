@@ -5,7 +5,7 @@ import {
   StyleSheet,
   TouchableOpacity
 } from 'react-native';
-import { Menu } from 'react-native-componentes';
+import { MenuItem } from 'react-native-componentes';
 
 const ITENS = [
     {nome: 'Criar'},
@@ -13,7 +13,7 @@ const ITENS = [
     {nome: 'Deletar'},
 ]
 
-export default class ExemploMenu extends Component {
+export default class ExemploMenuItem extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -29,7 +29,7 @@ export default class ExemploMenu extends Component {
     render() {
         return(
             <View style={estilos.corpo}>
-                <Menu 
+                <MenuItem 
                     visivel={this.state.abrirMenu} 
                     fechar={()=>this.setState({ abrirMenu: false })}
                     itens={ITENS}
