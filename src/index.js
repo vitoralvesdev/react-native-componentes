@@ -6,7 +6,7 @@ import Carregando from './carregando/Carregando';
 import FiltroModal from './filtromodal/FiltroModal';
 import GaleriaFotos from './galeriaFotos/GaleriaFotos';
 import Header from './header/Header';
-import Menu from './menu/Menu';
+import MenuItem from './menu/MenuItem';
 import Paginacao from './paginacao/Paginacao';
 import VerMais from './verMaisTexto/VerMaisTexto';
 
@@ -19,7 +19,7 @@ export {
     FiltroModal,
     GaleriaFotos,
     Header,
-    Menu,
+    MenuItem,
     Paginacao,
     VerMaisTexto
 };
