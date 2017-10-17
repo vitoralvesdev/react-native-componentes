@@ -4,19 +4,39 @@ import {
   Text,
   StyleSheet
 } from 'react-native';
-import Header from './header/Header';
+import ListaItem from './menu/ListaItem';
+
+ITENS = [
+    { nome: 'Item 1' },
+    { nome: 'Item 2' },
+    { nome: 'Item 3' },
+    { nome: 'Item 4' },
+    { nome: 'Item 5' },
+    { nome: 'Item 6' },
+    { nome: 'Item 7' },
+    { nome: 'Item 8' },
+    { nome: 'Item 9' },
+    { nome: 'Item 10' },
+    { nome: 'Item 1' },
+    { nome: 'Item 2' },
+    { nome: 'Item 3' },
+    { nome: 'Item 4' },
+    { nome: 'Item 5' },
+    { nome: 'Item 6' },
+    { nome: 'Item 7' },
+    { nome: 'Item 8' },
+    { nome: 'Item 9' },
+    { nome: 'Item 10' }
+];
+
 
 export default class App extends Component {
     render() {
         return(
             <View style={estilos.corpo}>
-                <Header titulo="React Native Componentes" />
-                <Text style={estilos.subTitulo}>
-                    ./src/ * Para todos os componentes
-                </Text>
-                <Text style={estilos.subTitulo}>
-                    ./exemplos/ * Para todos os exemplos
-                </Text>      
+                <ListaItem 
+                    itens={ITENS}
+                />      
             </View>
         )
     }
