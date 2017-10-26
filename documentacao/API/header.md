@@ -1,6 +1,6 @@
 <h3 align="center">Header</h3> 
 
-![alt text](https://raw.githubusercontent.com/vitoralvesdev/react-native-componentes/master/prints/Header.jpeg)
+![alt text](https://media.giphy.com/media/l378oBmfppv8NhEiY/giphy.gif)
 
 ### Propriedades 
 | prop | padrão | tipo | descrição |
