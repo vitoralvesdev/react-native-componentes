@@ -5,7 +5,7 @@
 </br>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/react-native-componentes"><img src="https://img.shields.io/badge/npm-0.0.10-orange.svg"></a>
+  <a href="https://www.npmjs.com/package/react-native-componentes"><img src="https://img.shields.io/badge/npm-0.0.11-orange.svg"></a>
 </p>
 
  
@@ -49,8 +49,9 @@ return(
 ## Atualizações
 
 - [V0.0.7](https://github.com/vitoralvesdev/react-native-componentes/releases/tag/0.0.7) - Novos componentes para integrar com seu projeto.
-- [V0.0.9](https://github.com/vitoralvesdev/react-native-componentes/releases/tag/0.0.9) - Correção em diversos bugs do Carousel.
+- [V0.0.9](https://github.com/vitoralvesdev/react-native-componentes/releases/tag/0.0.9) - Correção de diversos bugs do Carousel.
 - [V0.0.10](https://github.com/vitoralvesdev/react-native-componentes/releases/tag/0.0.10) - Nova propriedade no Carousel.
+- [V0.0.11](https://github.com/vitoralvesdev/react-native-componentes/releases/tag/0.0.11) - Correção de diversos bugs. Header agora é animado.
 
 ## Contribua
 

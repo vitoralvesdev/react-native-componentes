@@ -8,7 +8,7 @@ import GaleriaFotos from './galeriaFotos/GaleriaFotos';
 import Header from './header/Header';
 import MenuItem from './menu/MenuItem';
 import Paginacao from './paginacao/Paginacao';
-import VerMais from './verMaisTexto/VerMaisTexto';
+import VerMaisTexto from './verMaisTexto/VerMaisTexto';
 
 // Exports
 export {
