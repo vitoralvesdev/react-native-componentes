@@ -12,7 +12,7 @@
 ## Instalação
 
 ```js
-$ npm install --save-dev react-native-componentes 
+$ npm install --save react-native-components 
 ```
 
 ## Começando
