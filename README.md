@@ -42,7 +42,6 @@ return(
 - [x] [GaleriaFotos](https://github.com/vitoralvesdev/react-native-componentes/blob/master/documentacao/API/galeriafotos.md)
 - [x] [Header](https://github.com/vitoralvesdev/react-native-componentes/blob/master/documentacao/API/header.md)
 - [x] [MenuItem](https://github.com/vitoralvesdev/react-native-componentes/blob/master/documentacao/API/menuitem.md)
-- [ ] MenuLateral
 - [x] [Paginacao](https://github.com/vitoralvesdev/react-native-componentes/blob/master/documentacao/API/paginacao.md)
 - [x] [VerMaisTexto](https://github.com/vitoralvesdev/react-native-componentes/blob/master/documentacao/API/vermaistexto.md)
 
