@@ -44,6 +44,7 @@ return(
 - [x] [MenuItem](https://github.com/vitoralvesdev/react-native-componentes/blob/master/documentacao/API/menuitem.md)
 - [x] [Paginacao](https://github.com/vitoralvesdev/react-native-componentes/blob/master/documentacao/API/paginacao.md)
 - [x] [VerMaisTexto](https://github.com/vitoralvesdev/react-native-componentes/blob/master/documentacao/API/vermaistexto.md)
+- [ ] SwiperMenu
 
 ## Atualizações
 
