@@ -72,7 +72,9 @@ export default class Header extends Component {
                     onScroll={Animated.event([ {nativeEvent: {contentOffset: {y: this.state.scrollAnim}}} ])}
                     onMomentumScrollBegin={this._handleMomentumScrollBegin}
                     onMomentumScrollEnd={this._handleMomentumScrollEnd}
-                    onScrollEndDrag={this._handleScrollEndDrag}>
+                    onScrollEndDrag={this._handleScrollEndDrag}
+                    showsVerticalScrollIndicator={this.props.showsVerticalScrollIndicator}
+                    showsHorizontalScrollIndicator={this.props.showsHorizontalScrollIndicator}>
                         {this.props.children}
                 </AnimatedScrollView>
                 <Animated.View style={[estilos.header, { transform: [{translateY}] }]}>

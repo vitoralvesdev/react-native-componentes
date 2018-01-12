@@ -12,7 +12,7 @@ const { width, height } = Dimensions.get('window');
 export default class App extends Component {
     render() {
         return(  
-            <Header titulo="React Native Componentes">
+            <Header titulo="React Native Componentes"showsVerticalScrollIndicator={false}>
                 <View style={styles.corpo}>
                     <Text style={styles.subTitulo}>
                         ./src/ * Para todos os componentes
