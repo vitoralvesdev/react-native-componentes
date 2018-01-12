@@ -2,19 +2,22 @@ import React, { Component } from 'react';
 import {
   View,  
   Text,
+  Dimensions,
   StyleSheet
 } from 'react-native';
 import Header from './header/Header';
+
+const { width, height } = Dimensions.get('window');
 
 export default class App extends Component {
     render() {
         return(  
             <Header titulo="React Native Componentes">
-                <View style={estilos.corpo}>
-                    <Text style={estilos.subTitulo}>
+                <View style={styles.corpo}>
+                    <Text style={styles.subTitulo}>
                         ./src/ * Para todos os componentes
                     </Text>
-                    <Text style={estilos.subTitulo}>
+                    <Text style={styles.subTitulo}>
                         ./exemplos/ * Para todos os exemplos
                     </Text>     
                 </View>
@@ -23,14 +26,16 @@ export default class App extends Component {
     }
 }
 
-const estilos = StyleSheet.create({
+const styles = StyleSheet.create({
     corpo : {
-        flex: 1,
-        margin: 100
+        justifyContent: 'center',
+        alignItems: 'center',
+        width,
+        height: height-60,
     },
     subTitulo : {
         textAlign: 'center',
         color: '#333333',
-        marginBottom: 5
+        fontSize: 18
     }
 })
